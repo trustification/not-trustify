@@ -1,0 +1,16 @@
+[package]
+name = "huevos-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+huevos-server = { path = "../server"}
+huevos-importer = { path = "../importer"}
+
+anyhow = "1.0.72"
+clap = { version = "4", features = [ "derive", "env" ] }
+env_logger = "0.10.0"
+log = "0.4.19"
+serde_json = "1.0.104"
+thiserror = "1"
+tokio = { version = "1", features = ["full"] }
